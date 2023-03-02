@@ -11,6 +11,8 @@
 		3D884A4C29B10BD900781881 /* CarePlanSimpleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4B29B10BD900781881 /* CarePlanSimpleInfo.swift */; };
 		3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4D29B10C0900781881 /* CarePlanDescriptionItem.swift */; };
 		3D884A5029B10C5B00781881 /* CarePlanDescriptionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4F29B10C5B00781881 /* CarePlanDescriptionInfo.swift */; };
+		3D884A5429B10E6C00781881 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A5329B10E6C00781881 /* Client.swift */; };
+		3D884A5729B1100200781881 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A5629B1100200781881 /* DateExtension.swift */; };
 		3DFCA4CB29B0912500D23E81 /* hackathon_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */; };
 		3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */; };
 		3DFCA4CF29B0912600D23E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CE29B0912600D23E81 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		3D884A4B29B10BD900781881 /* CarePlanSimpleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanSimpleInfo.swift; sourceTree = "<group>"; };
 		3D884A4D29B10C0900781881 /* CarePlanDescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanDescriptionItem.swift; sourceTree = "<group>"; };
 		3D884A4F29B10C5B00781881 /* CarePlanDescriptionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanDescriptionInfo.swift; sourceTree = "<group>"; };
+		3D884A5329B10E6C00781881 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		3D884A5629B1100200781881 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		3DFCA4C729B0912500D23E81 /* hackathon-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_appApp.swift; sourceTree = "<group>"; };
 		3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanView.swift; sourceTree = "<group>"; };
@@ -102,9 +106,26 @@
 		3D884A5129B10C8500781881 /* CarePlan */ = {
 			isa = PBXGroup;
 			children = (
+				3D884A5229B10E5200781881 /* Domain */,
 				3D884A4629B10B4F00781881 /* View */,
 			);
 			path = CarePlan;
+			sourceTree = "<group>";
+		};
+		3D884A5229B10E5200781881 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3D884A5329B10E6C00781881 /* Client.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3D884A5529B10FF400781881 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D884A5629B1100200781881 /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		3DFCA4BE29B0912400D23E81 = {
@@ -130,6 +151,7 @@
 		3DFCA4C929B0912500D23E81 /* hackathon-app */ = {
 			isa = PBXGroup;
 			children = (
+				3D884A5529B10FF400781881 /* Extension */,
 				3D884A5129B10C8500781881 /* CarePlan */,
 				3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */,
 				3DFCA4CE29B0912600D23E81 /* Assets.xcassets */,
@@ -294,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D884A5029B10C5B00781881 /* CarePlanDescriptionInfo.swift in Sources */,
+				3D884A5729B1100200781881 /* DateExtension.swift in Sources */,
+				3D884A5429B10E6C00781881 /* Client.swift in Sources */,
 				3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */,
 				3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */,
 				3DFCA4CB29B0912500D23E81 /* hackathon_appApp.swift in Sources */,
