@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct hackathon_appApp: App {
+struct HackathonApp: App {
     var body: some Scene {
         WindowGroup {
             CarePlanView(client: Client(name: "山田太郎", birthDate: Calendar.current.date(byAdding: .year, value: -78, to: Date())!,simpleInfoData: [CarePlanSimpleInfo(title: "氏名", value: "田中太朗"),
