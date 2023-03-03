@@ -13,13 +13,13 @@
 		3D884A5029B10C5B00781881 /* CarePlanDescriptionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4F29B10C5B00781881 /* CarePlanDescriptionInfo.swift */; };
 		3D884A5429B10E6C00781881 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A5329B10E6C00781881 /* Client.swift */; };
 		3D884A5729B1100200781881 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A5629B1100200781881 /* DateExtension.swift */; };
-		3DFCA4CB29B0912500D23E81 /* hackathon_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */; };
+		3DFCA4CB29B0912500D23E81 /* HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */; };
 		3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */; };
 		3DFCA4CF29B0912600D23E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CE29B0912600D23E81 /* Assets.xcassets */; };
 		3DFCA4D229B0912600D23E81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCA4D129B0912600D23E81 /* Preview Assets.xcassets */; };
-		3DFCA4DC29B0912600D23E81 /* hackathon_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4DB29B0912600D23E81 /* hackathon_appTests.swift */; };
-		3DFCA4E629B0912600D23E81 /* hackathon_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4E529B0912600D23E81 /* hackathon_appUITests.swift */; };
-		3DFCA4E829B0912600D23E81 /* hackathon_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4E729B0912600D23E81 /* hackathon_appUITestsLaunchTests.swift */; };
+		3DFCA4DC29B0912600D23E81 /* HackathonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4DB29B0912600D23E81 /* HackathonAppTests.swift */; };
+		3DFCA4E629B0912600D23E81 /* HackathonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4E529B0912600D23E81 /* HackathonAppUITests.swift */; };
+		3DFCA4E829B0912600D23E81 /* HackathonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4E729B0912600D23E81 /* HackathonAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,15 +47,15 @@
 		3D884A5329B10E6C00781881 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		3D884A5629B1100200781881 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		3DFCA4C729B0912500D23E81 /* hackathon-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_appApp.swift; sourceTree = "<group>"; };
+		3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonApp.swift; sourceTree = "<group>"; };
 		3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanView.swift; sourceTree = "<group>"; };
 		3DFCA4CE29B0912600D23E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFCA4D129B0912600D23E81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DFCA4D729B0912600D23E81 /* hackathon-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackathon-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DFCA4DB29B0912600D23E81 /* hackathon_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_appTests.swift; sourceTree = "<group>"; };
+		3DFCA4DB29B0912600D23E81 /* HackathonAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppTests.swift; sourceTree = "<group>"; };
 		3DFCA4E129B0912600D23E81 /* hackathon-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackathon-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DFCA4E529B0912600D23E81 /* hackathon_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_appUITests.swift; sourceTree = "<group>"; };
-		3DFCA4E729B0912600D23E81 /* hackathon_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathon_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DFCA4E529B0912600D23E81 /* HackathonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppUITests.swift; sourceTree = "<group>"; };
+		3DFCA4E729B0912600D23E81 /* HackathonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				3DFCA4C929B0912500D23E81 /* hackathon-app */,
-				3DFCA4DA29B0912600D23E81 /* hackathon-appTests */,
-				3DFCA4E429B0912600D23E81 /* hackathon-appUITests */,
+				3DFCA4DA29B0912600D23E81 /* HackathonAppTests */,
+				3DFCA4E429B0912600D23E81 /* HackathonAppUITests */,
 				3DFCA4C829B0912500D23E81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			children = (
 				3D884A5529B10FF400781881 /* Extension */,
 				3D884A5129B10C8500781881 /* CarePlan */,
-				3DFCA4CA29B0912500D23E81 /* hackathon_appApp.swift */,
+				3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */,
 				3DFCA4CE29B0912600D23E81 /* Assets.xcassets */,
 				3DFCA4D029B0912600D23E81 /* Preview Content */,
 			);
@@ -168,21 +168,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3DFCA4DA29B0912600D23E81 /* hackathon-appTests */ = {
+		3DFCA4DA29B0912600D23E81 /* HackathonAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3DFCA4DB29B0912600D23E81 /* hackathon_appTests.swift */,
+				3DFCA4DB29B0912600D23E81 /* HackathonAppTests.swift */,
 			);
-			path = "hackathon-appTests";
+			path = HackathonAppTests;
 			sourceTree = "<group>";
 		};
-		3DFCA4E429B0912600D23E81 /* hackathon-appUITests */ = {
+		3DFCA4E429B0912600D23E81 /* HackathonAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3DFCA4E529B0912600D23E81 /* hackathon_appUITests.swift */,
-				3DFCA4E729B0912600D23E81 /* hackathon_appUITestsLaunchTests.swift */,
+				3DFCA4E529B0912600D23E81 /* HackathonAppUITests.swift */,
+				3DFCA4E729B0912600D23E81 /* HackathonAppUITestsLaunchTests.swift */,
 			);
-			path = "hackathon-appUITests";
+			path = HackathonAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +320,7 @@
 				3D884A5429B10E6C00781881 /* Client.swift in Sources */,
 				3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */,
 				3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */,
-				3DFCA4CB29B0912500D23E81 /* hackathon_appApp.swift in Sources */,
+				3DFCA4CB29B0912500D23E81 /* HackathonApp.swift in Sources */,
 				3D884A4929B10B7700781881 /* CarePlanSimpleItem.swift in Sources */,
 				3D884A4C29B10BD900781881 /* CarePlanSimpleInfo.swift in Sources */,
 			);
@@ -330,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFCA4DC29B0912600D23E81 /* hackathon_appTests.swift in Sources */,
+				3DFCA4DC29B0912600D23E81 /* HackathonAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,8 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFCA4E829B0912600D23E81 /* hackathon_appUITestsLaunchTests.swift in Sources */,
-				3DFCA4E629B0912600D23E81 /* hackathon_appUITests.swift in Sources */,
+				3DFCA4E829B0912600D23E81 /* HackathonAppUITestsLaunchTests.swift in Sources */,
+				3DFCA4E629B0912600D23E81 /* HackathonAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
