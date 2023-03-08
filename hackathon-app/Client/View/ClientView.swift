@@ -16,24 +16,7 @@ struct ClientView : View {
                     Text("１０歳")
                     Spacer()
                 }
-                List{
-                    Section(header:
-                        Text("ケアプラン一覧").font(.title).foregroundColor(.black)
-                    ){
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                        CarePlanListItem()
-                    }
-
-                }
-                
+                CarePlanListView()
             }
         }
     }
@@ -43,14 +26,4 @@ struct ClientView : View {
 struct ClientView_PreviewProvider: PreviewProvider {
     static var previews: some View {
         return ClientView()}
-}
-
-struct CarePlanListItem: View{
-    var body : some View {
-        return HStack {
-            Text("2022年2月20日確定")
-            Text("山田さん")
-            Text("田中萌子作成")
-        }
-    }
 }

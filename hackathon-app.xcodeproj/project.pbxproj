@@ -12,6 +12,9 @@
 		3D7ABFD929B72BF8006C9C09 /* ClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ABFD829B72BF8006C9C09 /* ClientViewModel.swift */; };
 		3D7ABFDD29B72E92006C9C09 /* ClientListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ABFDC29B72E92006C9C09 /* ClientListItem.swift */; };
 		3D7ABFDF29B7339B006C9C09 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ABFDE29B7339B006C9C09 /* ClientView.swift */; };
+		3D7ABFE129B8ECC0006C9C09 /* CarePlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ABFE029B8ECC0006C9C09 /* CarePlanListView.swift */; };
+		3D7ABFE329B8ED7F006C9C09 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D7ABFE229B8ED7F006C9C09 /* .swiftlint.yml */; };
+		3D7ABFE529B8EEE9006C9C09 /* CarePlanListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ABFE429B8EEE9006C9C09 /* CarePlanListItem.swift */; };
 		3D884A4929B10B7700781881 /* CarePlanSimpleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4829B10B7700781881 /* CarePlanSimpleItem.swift */; };
 		3D884A4C29B10BD900781881 /* CarePlanSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4B29B10BD900781881 /* CarePlanSimpleViewModel.swift */; };
 		3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D884A4D29B10C0900781881 /* CarePlanDescriptionItem.swift */; };
@@ -49,6 +52,9 @@
 		3D7ABFD829B72BF8006C9C09 /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
 		3D7ABFDC29B72E92006C9C09 /* ClientListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListItem.swift; sourceTree = "<group>"; };
 		3D7ABFDE29B7339B006C9C09 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		3D7ABFE029B8ECC0006C9C09 /* CarePlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanListView.swift; sourceTree = "<group>"; };
+		3D7ABFE229B8ED7F006C9C09 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		3D7ABFE429B8EEE9006C9C09 /* CarePlanListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanListItem.swift; sourceTree = "<group>"; };
 		3D884A4829B10B7700781881 /* CarePlanSimpleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanSimpleItem.swift; sourceTree = "<group>"; };
 		3D884A4B29B10BD900781881 /* CarePlanSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanSimpleViewModel.swift; sourceTree = "<group>"; };
 		3D884A4D29B10C0900781881 /* CarePlanDescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanDescriptionItem.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			children = (
 				3D884A4729B10B5600781881 /* ViewComponents */,
 				3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */,
+				3D7ABFE029B8ECC0006C9C09 /* CarePlanListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 			children = (
 				3D884A4829B10B7700781881 /* CarePlanSimpleItem.swift */,
 				3D884A4D29B10C0900781881 /* CarePlanDescriptionItem.swift */,
+				3D7ABFE429B8EEE9006C9C09 /* CarePlanListItem.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */,
 				3DFCA4CE29B0912600D23E81 /* Assets.xcassets */,
 				3DFCA4D029B0912600D23E81 /* Preview Content */,
+				3D7ABFE229B8ED7F006C9C09 /* .swiftlint.yml */,
 			);
 			path = "hackathon-app";
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7ABFE329B8ED7F006C9C09 /* .swiftlint.yml in Resources */,
 				3DFCA4D229B0912600D23E81 /* Preview Assets.xcassets in Resources */,
 				3DFCA4CF29B0912600D23E81 /* Assets.xcassets in Resources */,
 			);
@@ -364,6 +374,7 @@
 				3D884A5429B10E6C00781881 /* Client.swift in Sources */,
 				3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */,
 				3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */,
+				3D7ABFE529B8EEE9006C9C09 /* CarePlanListItem.swift in Sources */,
 				3D7ABFD229B723CD006C9C09 /* ClientListView.swift in Sources */,
 				3D7ABFDF29B7339B006C9C09 /* ClientView.swift in Sources */,
 				3DFCA4CB29B0912500D23E81 /* HackathonApp.swift in Sources */,
@@ -372,6 +383,7 @@
 				3D884A4929B10B7700781881 /* CarePlanSimpleItem.swift in Sources */,
 				3D7ABFDD29B72E92006C9C09 /* ClientListItem.swift in Sources */,
 				3D884A4C29B10BD900781881 /* CarePlanSimpleViewModel.swift in Sources */,
+				3D7ABFE129B8ECC0006C9C09 /* CarePlanListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
