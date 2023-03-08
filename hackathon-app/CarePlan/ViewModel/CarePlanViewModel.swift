@@ -1,9 +1,8 @@
 import Foundation
 
-struct Client {
-    let name: String
-    let age:Int
-    let familyLivingTogether: [String]
+struct CarePlanViewModel {
+    let clientName: String
+    let clientAge: String
     let simpleInfoData: [CarePlanSimpleViewModel]
     let descriptionInfoData: [CarePlanDescriptionViewModel]
 }
