@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct CarePlanSimpleItem: View {
-    let info: CarePlanSimpleInfo
+    let model: CarePlanSimpleViewModel
     var body: some View {
         HStack{
-            Text(info.title)
+            Text(model.title)
             Spacer()
-            Text(info.value)
+            Text(model.value)
         }
     }
 }
