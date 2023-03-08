@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct CarePlanListItem: View{
+    let model: CarePlanViewModel
     var body : some View {
         return HStack {
-            Text("2022年2月20日確定")
-            Text("山田さん")
-            Text("田中萌子作成")
+            Text(model.updatedAt + "編集")
+            Text(model.clientName + "さん")
+            Text(model.author + "作")
         }
     }
 }

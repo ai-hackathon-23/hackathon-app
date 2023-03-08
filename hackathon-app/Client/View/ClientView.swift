@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ClientView : View {
-    
+    let client: ClientViewModel
     var body:  some View {
         return VStack {
             VStack {
@@ -16,14 +16,19 @@ struct ClientView : View {
                     Text("１０歳")
                     Spacer()
                 }
-                CarePlanListView()
+                List {
+                    Section(header: Text("ケアプラン一覧").font(.title).foregroundColor(.black)) {
+                        ForEach(0 ..< client.carePlans.count) { index in
+                            NavigationLink(
+                                destination: CarePlanView(carePlan: client.carePlans[index]),
+                                label: { CarePlanListItem(model: client.carePlans[index]) }
+                            )
+                        }
+                    }
+                }
             }
         }
     }
     
 }
 
-struct ClientView_PreviewProvider: PreviewProvider {
-    static var previews: some View {
-        return ClientView()}
-}

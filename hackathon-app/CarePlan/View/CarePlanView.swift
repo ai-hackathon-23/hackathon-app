@@ -20,14 +20,13 @@ struct CarePlanView: View {
                 CarePlanDescriptionItem(model: model)
             }
         }
-
     }
 }
 
 struct CarePlanView_Previews: PreviewProvider {
 
     static var previews: some View {
-        CarePlanView(carePlan: CarePlanViewModel(clientName: "山田太郎",clientAge: "9" ,simpleInfoData: [CarePlanSimpleViewModel(title: "氏名", value: "田中太朗"),
+        CarePlanView(carePlan: CarePlanViewModel(clientName: "山田太郎",author: "ケアプラン作成タロウ", clientAge: "8", updatedAt: "2022年2月28日" ,simpleInfoData: [CarePlanSimpleViewModel(title: "氏名", value: "田中太朗"),
                                                                                                                                     CarePlanSimpleViewModel(title: "生年月日", value: "2022年2月10日"),
                                                                                                                                               CarePlanSimpleViewModel(title: "居住サービス計画作成者氏名", value: "ケアマネ太朗"),
                                                                                                                                               CarePlanSimpleViewModel(title: "居住介護支援事業者", value: "居宅事業所XXX")
