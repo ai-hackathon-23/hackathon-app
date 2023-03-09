@@ -11,15 +11,14 @@ struct CarePlanView: View {
     let carePlan: CarePlanViewModel
     var body: some View {
         List {
-            
-            CarePlanSimpleItem(model: CarePlanSimpleViewModel(title: "氏名", value: carePlan.clientName))
-            CarePlanSimpleItem(model: CarePlanSimpleViewModel(title: "年齢", value: carePlan.clientAge))
-            ForEach(carePlan.simpleInfoData, id: \.self) { model in
-                CarePlanSimpleItem(model: model)
-            }
-            ForEach(carePlan.descriptionInfoData, id: \.self) { model in
-                CarePlanDescriptionItem(model: model)
-            }
+            CarePlanSimpleItem(title: CarePlanTitle.clientName.rawValue, value: carePlan.clientName)
+            CarePlanSimpleItem(title: CarePlanTitle.clientAge.rawValue, value: carePlan.clientAge)
+            CarePlanSimpleItem(title: CarePlanTitle.author.rawValue, value: carePlan.author)
+            CarePlanSimpleItem(title: CarePlanTitle.facilityName.rawValue, value: carePlan.facilityName)
+            CarePlanDescriptionItem(title: CarePlanTitle.resultAnalyze.rawValue, value: carePlan.resultAnalyze)
+            CarePlanDescriptionItem(title: CarePlanTitle.careCommitteeOpinion.rawValue, value: carePlan.careCommitteeOpinion)
+            CarePlanDescriptionItem(title: CarePlanTitle.specifiedService.rawValue, value: carePlan.specifiedService)
+            CarePlanDescriptionItem(title: CarePlanTitle.carePolicy.rawValue, value: carePlan.carePolicy)
             NavigationLink("編集する", destination: EditCarePlanView(name: "hogehoge"))
         }
     }
@@ -28,14 +27,14 @@ struct CarePlanView: View {
 struct CarePlanView_Previews: PreviewProvider {
     
     static var previews: some View {
-        CarePlanView(carePlan: CarePlanViewModel(clientName: "山田太郎", author: "ケアプラン作成タロウ", clientAge: "8", updatedAt: "2022年2月28日", simpleInfoData: [CarePlanSimpleViewModel(title: "氏名", value: "田中太朗"),
-                                                                                                                                                     CarePlanSimpleViewModel(title: "生年月日", value: "2022年2月10日"),
-                                                                                                                                                     CarePlanSimpleViewModel(title: "居住サービス計画作成者氏名", value: "ケアマネ太朗"),
-                                                                                                                                                     CarePlanSimpleViewModel(title: "居住介護支援事業者", value: "居宅事業所XXX")
-                                                                                                                                                    ],
-                                                 descriptionInfoData: [CarePlanDescriptionViewModel(title: "利用者及び家族の生活に対する意向を踏まえた課題分析の結果",
-                                                                                                    description: "本人は一人で安心して外出できるようになりたいと考えている。夫は以前一人で外出し浅井に、車止めにつまずき転倒したため、転倒がないように日頃のケアを大事にしたいと思っている"),
-                                                                       CarePlanDescriptionViewModel(title: "介護認定審査会の意見及びサービスの種類の指定", description: "特になし。要介護状態が長期にわたって変化しないと考えられるため、認定有効期間を一年に延長する"),
-                                                                       CarePlanDescriptionViewModel(title: "総合的な援助の方針", description: "ご自宅でご主人と生活されています、ご主人が仕事をされているため、ご主人の負担を一番に考えられています、その中でご自身の体がなかなか動かなくなってきていることも自覚されており、転倒することがないように筋力低下を防ぎたいと思われています。支援方法①体調に合わせて子羽年を行い、役割が継続できるように支援します。支援方法②家事のできることを行えるように支援します。")] ))
+        CarePlanView(carePlan: CarePlanViewModel(clientName: "山田太郎",
+                                                  clientAge: "9",
+                                                  author: "ケアマネ太朗",
+                                                  facilityName: "2022年2月28日",
+                                                  carePolicy: "施設名が入ります",
+                                                  specifiedService: "ご自宅でご主人と生活されています、ご主人が仕事をされているため、ご主人の負担を一番に考えられています、その中でご自身の体がなかなか動かなくなってきていることも自覚されており、転倒することがないように筋力低下を防ぎたいと思われています。支援方法①体調に合わせて子羽年を行い、役割が継続できるように支援します。支援方法②家事のできることを行えるように支援します 。",
+                                                  careCommitteeOpinion: "特になし。要介護状態が長期にわたって変化しないと考えられるため、認定有効期間を一年に延長する",
+                                                  resultAnalyze: "本人は一人で安心して外出できるようになりたいと考えている。夫は以前一人で外出し浅井に、車止めにつまずき転倒したため、転倒がないように日頃のケアを大事にしたいと思っている",
+                                                  updatedAt: "特になし"))
     }
 }

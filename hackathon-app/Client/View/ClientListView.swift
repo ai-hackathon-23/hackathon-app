@@ -2,7 +2,8 @@ import SwiftUI
 
 struct ClientListView: View {
     @EnvironmentObject var appState: AppState
-    let clients: [ClientViewModel]
+    let clients: [ClientViewModel] = []
+
     var body:  some View {
         return NavigationView {List {
             ForEach(0 ..< clients.count) { index in
