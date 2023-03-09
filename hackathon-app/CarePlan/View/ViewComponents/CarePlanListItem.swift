@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CarePlanListItem: View{
+struct CarePlanListItem: View {
     let model: CarePlanViewModel
     var body : some View {
         return HStack {

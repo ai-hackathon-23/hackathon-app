@@ -4,7 +4,7 @@ struct ClientListView: View {
     @EnvironmentObject var appState: AppState
     let clients: [ClientViewModel]
     var body:  some View {
-        return NavigationView {List{
+        return NavigationView {List {
             ForEach(0 ..< clients.count) { index in
                 NavigationLink {
                     ClientView(client: clients[index])
@@ -13,15 +13,16 @@ struct ClientListView: View {
                 }
 
             }
-        }}
+        }
+        }
     }
 }
 
-//struct ClientListView_PreviewProvider: PreviewProvider {
+// struct ClientListView_PreviewProvider: PreviewProvider {
 //    static var previews: some View {
 //        return ClientListView(clients:[ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),])
 //    }
-//}
+// }
 
 import UIKit
 struct NavigationUtil {

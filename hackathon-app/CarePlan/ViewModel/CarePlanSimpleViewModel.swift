@@ -1,4 +1,4 @@
-struct CarePlanSimpleViewModel: Hashable{
+struct CarePlanSimpleViewModel: Hashable {
     let title: String
     let value: String
 }

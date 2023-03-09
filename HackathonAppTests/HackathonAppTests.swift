@@ -5,8 +5,8 @@
 //  Created by 松山響也 on 2023/03/02.
 //
 
-import XCTest
 @testable import hackathon_app
+import XCTest
 
 final class HackathonAppTests: XCTestCase {
 

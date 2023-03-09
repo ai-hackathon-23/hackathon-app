@@ -1,7 +1,7 @@
 import Foundation
 
 extension Date {
-    var toJapaneseLongString: String{
+    var toJapaneseLongString: String {
         let df = DateFormatter()
         df.locale = Locale(identifier: "ja_JP")
         df.dateStyle = .long

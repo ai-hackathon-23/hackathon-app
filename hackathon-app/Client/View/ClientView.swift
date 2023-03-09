@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ClientView : View, Hashable {
+struct ClientView: View, Hashable {
     let client: ClientViewModel
     var body:  some View {
         return VStack {
@@ -31,4 +31,3 @@ struct ClientView : View, Hashable {
     }
     
 }
-

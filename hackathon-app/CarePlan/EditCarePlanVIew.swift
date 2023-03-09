@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EditCarePlanView : View {
+struct EditCarePlanView: View {
     @EnvironmentObject var appState: AppState
     @State var name: String
     var body: some View {
@@ -25,7 +25,7 @@ struct EditCarePlanView : View {
     }
 }
 
-private struct CustomTextEditor : View {
+private struct CustomTextEditor: View {
     @Binding var value: String
     let title: String
     
@@ -38,7 +38,7 @@ private struct CustomTextEditor : View {
     }
 }
 
-struct EditCarePlanView_PreviewProvider : PreviewProvider {
+struct EditCarePlanViewPreviewProvider: PreviewProvider {
     static var previews: some View {
         EditCarePlanView(name: "")
     }
