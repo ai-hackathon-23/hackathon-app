@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CarePlanListView : View {
+    @EnvironmentObject var appState: AppState
     let careModelArray = [CarePlanViewModel(clientName: "山田太郎", author: "ケアマネ太朗",clientAge: "9",updatedAt: "2022年2月28日" ,simpleInfoData: [CarePlanSimpleViewModel(title: "氏名", value: "田中太朗"),
                                                                                                                         CarePlanSimpleViewModel(title: "生年月日", value: "2022年2月10日"),
                                                                                                                         CarePlanSimpleViewModel(title: "居住サービス計画作成者氏名", value: "ケアマネ太朗"),

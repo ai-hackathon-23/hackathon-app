@@ -1,7 +1,7 @@
 import SwiftUI
 
 
-struct ClientListItem: View {
+struct ClientListItem: View,Hashable {
     let model: ClientViewModel
     var body: some View {
         HStack(){

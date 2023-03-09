@@ -10,7 +10,8 @@ import SwiftUI
 struct CarePlanView: View {
     let carePlan: CarePlanViewModel
     var body: some View {
-        List {
+         List {
+            
             CarePlanSimpleItem(model: CarePlanSimpleViewModel(title: "氏名", value: carePlan.clientName))
             CarePlanSimpleItem(model: CarePlanSimpleViewModel(title: "年齢", value: carePlan.clientAge))
             ForEach(carePlan.simpleInfoData, id:\.self) { model in
@@ -19,6 +20,7 @@ struct CarePlanView: View {
             ForEach(carePlan.descriptionInfoData, id:\.self) { model in
                 CarePlanDescriptionItem(model: model)
             }
+                NavigationLink("編集する", destination: EditCarePlanView(name: "hogehoge"))
         }
     }
 }
