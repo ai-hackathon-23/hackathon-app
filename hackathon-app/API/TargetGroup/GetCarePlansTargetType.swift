@@ -15,12 +15,12 @@ struct GetCarePlansTargetType: ApiTargetType {
 
 struct CarePlan: Decodable {
     let id: Int
-    let author: String
-    let facilityName: String
-    let resultAnalyze: String
-    let careCommitteeOpinion: String
-    let specifiedService: String
-    let carePolicy: String
+    let author: String?
+    let facilityName: String?
+    let resultAnalyze: String?
+    let careCommitteeOpinion: String?
+    let specifiedService: String?
+    let carePolicy: String?
     let updatedAt: String
     let client: Client
     

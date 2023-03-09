@@ -1,29 +1,26 @@
 import SwiftUI
 
 struct ClientListView: View {
+    @ObservedObject var presenter: ClientListPresenter
     @EnvironmentObject var appState: AppState
     let clients: [ClientViewModel] = []
 
     var body:  some View {
         return NavigationView {List {
-            ForEach(0 ..< clients.count) { index in
+            ForEach(0 ..< presenter.clients.count, id: \.self) { index in
                 NavigationLink {
-                    ClientView(client: clients[index])
+                    ClientView(client: presenter.clients[index])
                 } label: {
-                    ClientListItem(model: clients[index])
+                    ClientListItem(model: presenter.clients[index])
                 }
 
             }
         }
+        }.onAppear {
+            presenter.didInit()
         }
     }
 }
-
-// struct ClientListView_PreviewProvider: PreviewProvider {
-//    static var previews: some View {
-//        return ClientListView(clients:[ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),ClientViewModel(name: "山田太郎", age: "90"),])
-//    }
-// }
 
 import UIKit
 struct NavigationUtil {

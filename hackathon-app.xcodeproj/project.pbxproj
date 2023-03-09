@@ -26,6 +26,10 @@
 		3DBDFC8D29B98BB700903B86 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC8C29B98BB700903B86 /* APIClient.swift */; };
 		3DBDFC9129B98C5B00903B86 /* GetCarePlansTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9029B98C5B00903B86 /* GetCarePlansTargetType.swift */; };
 		3DBDFC9429B9AB1D00903B86 /* CarePlanListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9329B9AB1D00903B86 /* CarePlanListPresenter.swift */; };
+		3DBDFC9629BA27A900903B86 /* ClientListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9529BA27A800903B86 /* ClientListPresenter.swift */; };
+		3DBDFC9829BA28D500903B86 /* GetClientListTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9729BA28D500903B86 /* GetClientListTargetType.swift */; };
+		3DBDFC9A29BA30E200903B86 /* UpdateCarePlanTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9929BA30E200903B86 /* UpdateCarePlanTargetType.swift */; };
+		3DBDFC9C29BA440000903B86 /* CreateCarePlanTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDFC9B29BA440000903B86 /* CreateCarePlanTargetType.swift */; };
 		3DFCA4CB29B0912500D23E81 /* HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */; };
 		3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */; };
 		3DFCA4CF29B0912600D23E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCA4CE29B0912600D23E81 /* Assets.xcassets */; };
@@ -68,6 +72,10 @@
 		3DBDFC8C29B98BB700903B86 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		3DBDFC9029B98C5B00903B86 /* GetCarePlansTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCarePlansTargetType.swift; sourceTree = "<group>"; };
 		3DBDFC9329B9AB1D00903B86 /* CarePlanListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanListPresenter.swift; sourceTree = "<group>"; };
+		3DBDFC9529BA27A800903B86 /* ClientListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListPresenter.swift; sourceTree = "<group>"; };
+		3DBDFC9729BA28D500903B86 /* GetClientListTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClientListTargetType.swift; sourceTree = "<group>"; };
+		3DBDFC9929BA30E200903B86 /* UpdateCarePlanTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCarePlanTargetType.swift; sourceTree = "<group>"; };
+		3DBDFC9B29BA440000903B86 /* CreateCarePlanTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCarePlanTargetType.swift; sourceTree = "<group>"; };
 		3DFCA4C729B0912500D23E81 /* hackathon-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFCA4CA29B0912500D23E81 /* HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonApp.swift; sourceTree = "<group>"; };
 		3DFCA4CC29B0912500D23E81 /* CarePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanView.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 			children = (
 				3D7ABFDA29B72E7A006C9C09 /* View */,
 				3D7ABFD729B72BEB006C9C09 /* ViewModel */,
+				3DBDFC9529BA27A800903B86 /* ClientListPresenter.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -213,6 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				3DBDFC9029B98C5B00903B86 /* GetCarePlansTargetType.swift */,
+				3DBDFC9729BA28D500903B86 /* GetClientListTargetType.swift */,
+				3DBDFC9929BA30E200903B86 /* UpdateCarePlanTargetType.swift */,
+				3DBDFC9B29BA440000903B86 /* CreateCarePlanTargetType.swift */,
 			);
 			path = TargetGroup;
 			sourceTree = "<group>";
@@ -449,20 +461,24 @@
 				3DBDFC9129B98C5B00903B86 /* GetCarePlansTargetType.swift in Sources */,
 				3DBDFC8D29B98BB700903B86 /* APIClient.swift in Sources */,
 				3D7ABFE829B8F5D0006C9C09 /* DateExtension.swift in Sources */,
+				3DBDFC9629BA27A900903B86 /* ClientListPresenter.swift in Sources */,
 				3DBDFC9429B9AB1D00903B86 /* CarePlanListPresenter.swift in Sources */,
 				3D884A5429B10E6C00781881 /* Client.swift in Sources */,
 				3D884A4E29B10C0900781881 /* CarePlanDescriptionItem.swift in Sources */,
 				3DFCA4CD29B0912500D23E81 /* CarePlanView.swift in Sources */,
 				3D7ABFE529B8EEE9006C9C09 /* CarePlanListItem.swift in Sources */,
+				3DBDFC9829BA28D500903B86 /* GetClientListTargetType.swift in Sources */,
 				3D7ABFD229B723CD006C9C09 /* ClientListView.swift in Sources */,
 				3D7ABFDF29B7339B006C9C09 /* ClientView.swift in Sources */,
 				3D7ABFEA29B909B5006C9C09 /* EditCarePlanVIew.swift in Sources */,
 				3DFCA4CB29B0912500D23E81 /* HackathonApp.swift in Sources */,
+				3DBDFC9C29BA440000903B86 /* CreateCarePlanTargetType.swift in Sources */,
 				3D7ABFD629B72519006C9C09 /* CarePlanViewModel.swift in Sources */,
 				3D7ABFD929B72BF8006C9C09 /* ClientViewModel.swift in Sources */,
 				3D884A4929B10B7700781881 /* CarePlanSimpleItem.swift in Sources */,
 				3D7ABFDD29B72E92006C9C09 /* ClientListItem.swift in Sources */,
 				3D7ABFE129B8ECC0006C9C09 /* CarePlanListView.swift in Sources */,
+				3DBDFC9A29BA30E200903B86 /* UpdateCarePlanTargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

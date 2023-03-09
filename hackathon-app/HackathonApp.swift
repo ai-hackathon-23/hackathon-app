@@ -28,7 +28,7 @@ struct HackathonApp: App {
                     }
                 }
                 
-                ClientListView()  .id(appState.rootViewId) // 実際には Text を使うのではなく、カスタムビューとなる
+                ClientListView(presenter: ClientListPresenter())  .id(appState.rootViewId) // 実際には Text を使うのではなく、カスタムビューとなる
                     .tabItem {
                         VStack {
                             Image(systemName: "person")

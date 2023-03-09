@@ -7,13 +7,13 @@ struct ClientView: View, Hashable {
             VStack {
                 HStack {
                     Text("お名前：").font(.title)
-                    Text("ここに名前が入ります")
+                    Text(client.name)
                     Spacer()
                     
                 }
                 HStack {
                     Text("年齢：").font(.title)
-                    Text("１０歳")
+                    Text("\(client.age)歳")
                     Spacer()
                 }
                 List {
@@ -25,6 +25,14 @@ struct ClientView: View, Hashable {
                             )
                         }
                     }
+                    Button {
+                        ApiClient.shared.request(CreateCarePlanTargetType(clientId: client.id)) { result in
+                            
+                        }
+                    } label: {
+                        Text("ケアプランを追加する")
+                    }
+
                 }
             }
         }

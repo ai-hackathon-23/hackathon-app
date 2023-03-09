@@ -1,6 +1,7 @@
 import Foundation
 
 struct CarePlanViewModel: Hashable {
+    let id: String
     let clientName: String
     let clientAge: String
     let author: String

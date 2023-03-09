@@ -19,7 +19,7 @@ struct CarePlanView: View {
             CarePlanDescriptionItem(title: CarePlanTitle.careCommitteeOpinion.rawValue, value: carePlan.careCommitteeOpinion)
             CarePlanDescriptionItem(title: CarePlanTitle.specifiedService.rawValue, value: carePlan.specifiedService)
             CarePlanDescriptionItem(title: CarePlanTitle.carePolicy.rawValue, value: carePlan.carePolicy)
-            NavigationLink("編集する", destination: EditCarePlanView(name: "hogehoge"))
+            NavigationLink("編集する", destination: EditCarePlanView( author: carePlan.author, resultAnalyze: carePlan.resultAnalyze, careCommitteeOpinion: carePlan.careCommitteeOpinion, specifiedService: carePlan.specifiedService, carePolicy: carePlan.specifiedService, id: carePlan.id))
         }
     }
 }
@@ -27,7 +27,7 @@ struct CarePlanView: View {
 struct CarePlanView_Previews: PreviewProvider {
     
     static var previews: some View {
-        CarePlanView(carePlan: CarePlanViewModel(clientName: "山田太郎",
+        CarePlanView(carePlan: CarePlanViewModel(id: "9", clientName: "山田太郎",
                                                   clientAge: "9",
                                                   author: "ケアマネ太朗",
                                                   facilityName: "2022年2月28日",
