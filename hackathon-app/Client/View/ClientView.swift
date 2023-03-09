@@ -1,7 +1,10 @@
 import SwiftUI
 
-struct ClientView: View, Hashable {
+struct ClientView: View {
+    
     let client: ClientViewModel
+    @State private var showingAlert = false
+    @EnvironmentObject var appState: AppState
     var body:  some View {
         return VStack {
             VStack {
@@ -27,10 +30,13 @@ struct ClientView: View, Hashable {
                     }
                     Button {
                         ApiClient.shared.request(CreateCarePlanTargetType(clientId: client.id)) { result in
-                            
+                            appState.rootViewId = UUID()
+                            showingAlert = true
                         }
                     } label: {
-                        Text("ケアプランを追加する")
+                        Text(client.name + "さんのケアプランを追加する")
+                    }        .alert(isPresented: $showingAlert) {  // ③アラートの表示条件設定
+                        Alert(title: Text("追加しました"))     // ④アラートの定義
                     }
 
                 }

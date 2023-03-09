@@ -8,7 +8,7 @@ class CarePlanListPresenter: ObservableObject {
             case .success(let model):
                 self?.carePlans = model.map({ carePlan in
                     CarePlanViewModel(id: carePlan.id.description, clientName: carePlan.client.name, clientAge: String(carePlan.client.age), author: carePlan.author ?? "", facilityName: carePlan.facilityName ?? "", carePolicy: carePlan.carePolicy ?? "", specifiedService: carePlan.specifiedService ?? "", careCommitteeOpinion: carePlan.careCommitteeOpinion ?? "", resultAnalyze: carePlan.resultAnalyze!, updatedAt: carePlan.updatedAt)
-                })
+                }).reversed()
             case .failure(let failure):
                 break
             }        

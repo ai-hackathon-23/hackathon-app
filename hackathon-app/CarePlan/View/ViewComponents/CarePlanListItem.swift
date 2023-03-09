@@ -3,8 +3,8 @@ import SwiftUI
 struct CarePlanListItem: View {
     let model: CarePlanViewModel
     var body : some View {
-        return VStack {
-            Text(model.updatedAt + "編集")
+        return VStack(alignment: .leading) {
+            Text("最終更新日：  " + model.updatedAt)
                 Text(model.clientName + "さん")
                 Text("記述者名：" + model.author )
         }
